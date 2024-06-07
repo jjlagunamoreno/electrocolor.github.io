@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+section {
+    padding: 40px 0;
+}
+
+/* Navbar */
+.navbar {
+    margin-bottom: 40px;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    color: #000;
+    transition: color 0.3s;
+}
+
+.dark-mode .navbar-nav .nav-link {
+    color: #fff;
+}
+
+/* Buttons */
+button {
+    margin-top: 10px;
+}
+
+.btn-primary,
+.btn-secondary {
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-primary {
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #444;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    background-color: #444;
+    color: #fff;
+}
+
+/* Dark Mode */
+.dark-mode .btn-primary {
+    background-color: #fff;
+    color: #000;
+    border: none;
+}
+
+.dark-mode .btn-primary:hover,
+.dark-mode .btn-primary:focus {
+    background-color: #888;
+    color: #fff;
+}
+
+.dark-mode .btn-secondary {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.dark-mode .btn-secondary:hover,
+.dark-mode .btn-secondary:focus {
+    background-color: #444;
+    color: #888;
+}
+
+/* Background Colors */
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.bg-white {
+    background-color: #ffffff !important;
+}
+
+/* Social Icons */
+.social-icon {
+    color: #000;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #888;
+}
+
+/* Social Section */
+#redes-sociales h2 {
+    color: #000;
+    transition: color 0.3s;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+.dark-mode .navbar,
+.dark-mode .bg-light {
+    background-color: #333 !important;
+    color: #fff !important;
+}
+
+.dark-mode .bg-white {
+    background-color: #444 !important;
+    color: #fff !important;
+}
+
+.dark-mode .social-icon {
+    color: #fff;
+}
+
+.dark-mode .social-icon:hover {
+    color: #888;
+}
+
+.dark-mode #redes-sociales h2 {
+    color: #fff;
+}

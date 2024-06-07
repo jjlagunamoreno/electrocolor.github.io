@@ -1,0 +1,62 @@
+/* Category */
+.category {
+    margin-bottom: 20px;
+}
+
+.toggle-category {
+    cursor: pointer;
+    float: right;
+    margin-top: 5px;
+}
+
+.more-products {
+    margin-top: 10px;
+}
+
+/* Product Items */
+.product-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+}
+
+.product-item:last-child {
+    border-bottom: none;
+}
+
+.product-image {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.product-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.product-price {
+    color: #888;
+    font-size: 1rem;
+}
+
+/* Alergenos */
+.alergenos {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.alergeno-icon {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}

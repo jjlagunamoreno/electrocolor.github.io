@@ -1,0 +1,32 @@
+/* Carousel */
+.carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.carousel-caption a.btn {
+    font-size: 1.5rem;
+    padding: 15px 30px;
+}
+
+.text-center i.fas {
+    font-size: 2rem;
+    color: #000;
+    transition: color 0.3s;
+}
+
+.text-center i.fas:hover {
+    color: #888;
+}
+
+/* Carousel Responsive Adjustments */
+@media (max-width: 768px) {
+    .carousel-inner img {
+        height: 300px;
+    }
+
+    .carousel-caption a.btn {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+}
