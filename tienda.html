@@ -13,26 +13,30 @@
 </head>
 
 <body>
-    <!-- Navbar -->
+    <!-- Menu Web -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="Tu Restaurante Logo" height="50">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="tienda.html">Tienda</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                </li>
+        <div class="container" style="text-align: center;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="navbar-brand mx-auto" href="index.html">
+                <img src="images/logo_menu.png" alt="Electrocolor©" id="logo" class="center-logo">
+            </a>
+            <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="#" id="theme-toggle">
                         <i class="fas fa-moon"></i>
@@ -45,178 +49,15 @@
     <!-- Sección tienda -->
     <section id="tienda" class="container mt-5 pt-5">
         <div class="row">
-            <div class="col text-center">
-                <h2>Nuestra tienda</h2>
-                <p>Explora nuestros deliciosos platos.</p>
-            </div>
-        </div>
-
-        <!-- Categoría Entrantes -->
-        <div class="category" onclick="toggleCategory('entrantes')">
-            <h3 class="bg-light p-3">Entrantes <i class="fas fa-angle-down toggle-category"></i></h3>
-        </div>
-        <ul class="list-unstyled">
-            <li class="product-item">
-                <img src="images/dish1.webp" alt="Ensalada César" class="product-image">
-                <div class="product-info">
-                    <span class="product-name">Ensalada César</span>
-                    <span class="product-price">$5.99</span>
-                    <div class="alergenos">
-                        <img src="images/icono_alergeno1.png" alt="Alergeno" class="alergeno-icon">
-                        <img src="images/icono_alergeno2.png" alt="Alergeno" class="alergeno-icon">
-                    </div>
-                </div>
-            </li>
-            <li class="product-item">
-                <img src="images/dish2.webp" alt="Sopa del día" class="product-image">
-                <div class="product-info">
-                    <span class="product-name">Sopa del día</span>
-                    <span class="product-price">$4.99</span>
-                    <div class="alergenos">
-                        <img src="images/icono_alergeno3.png" alt="Alergeno" class="alergeno-icon">
-                    </div>
-                </div>
-            </li>
-        </ul>
-        <div class="more-products d-none" id="entrantes">
-            <li class="product-item">
-                <img src="images/dish7.webp" alt="Nuevo Plato 1" class="product-image">
-                <div class="product-info">
-                    <span class="product-name">Nuevo Plato 1</span>
-                    <span class="product-price">$7.99</span>
-                    <div class="alergenos">
-                        <img src="images/icono_alergeno4.png" alt="Alergeno" class="alergeno-icon">
-                    </div>
-                </div>
-            </li>
-            <li class="product-item">
-                <img src="images/dish8.webp" alt="Nuevo Plato 2" class="product-image">
-                <div class="product-info">
-                    <span class="product-name">Nuevo Plato 2</span>
-                    <span class="product-price">$8.99</span>
-                    <div class="alergenos">
-                        <img src="images/icono_alergeno5.png" alt="Alergeno" class="alergeno-icon">
-                    </div>
-                </div>
-            </li>
-        </div>
-
-        <!-- Categoría Recomendados -->
-        <div class="category" onclick="toggleCategory('platos-principales')">
-            <h3 class="bg-light p-3">Recomendados <i class="fas fa-angle-down toggle-category"></i></h3>
-        </div>
-        <ul class="list-unstyled">
-            <li class="product-item">
-                <img src="images/dish3.webp" alt="Filete de ternera" class="product-image">
-                <div class="product-info">
-                    <span class="product-name">Filete de ternera</span>
-                    <span class="product-price">$14.99</span>
-                    <div class="alergenos">
-                        <img src="images/icono_alergeno1.png" alt="Alergeno" class="alergeno-icon">
-                    </div>
-                </div>
-            </li>
-            <li class="product-item">
-                <img src="images/dish4.webp" alt="Pollo a la parrilla" class="product-image">
-                <div class="product-info">
-                    <span class="product-name">Pollo a la parrilla</span>
-                    <span class="product-price">$12.99</span>
-                    <div class="alergenos">
-                        <img src="images/icono_alergeno2.png" alt="Alergeno" class="alergeno-icon">
-                    </div>
-                </div>
-            </li>
-        </ul>
-        <div class="more-products d-none" id="platos-principales">
-            <li class="product-item">
-                <img src="images/dish7.webp" alt="Nuevo Plato 1" class="product-image">
-                <div class="product-info">
-                    <span class="product-name">Nuevo Plato 3</span>
-                    <span class="product-price">$17.99</span>
-                    <div class="alergenos">
-                        <img src="images/icono_alergeno3.png" alt="Alergeno" class="alergeno-icon">
-                    </div>
-                </div>
-            </li>
-        </div>
-
-        <!-- Categoría Postres -->
-        <div class="category" onclick="toggleCategory('postres')">
-            <h3 class="bg-light p-3">Postres <i class="fas fa-angle-down toggle-category"></i></h3>
-        </div>
-        <ul class="list-unstyled">
-            <li class="product-item">
-                <img src="images/dish5.webp" alt="Tarta de queso" class="product-image">
-                <div class="product-info">
-                    <span class="product-name">Tarta de queso</span>
-                    <span class="product-price">$6.99</span>
-                    <div class="alergenos">
-                        <img src="images/icono_alergeno1.png" alt="Alergeno" class="alergeno-icon">
-                        <img src="images/icono_alergeno3.png" alt="Alergeno" class="alergeno-icon">
-                    </div>
-                </div>
-            </li>
-            <li class="product-item">
-                <img src="images/dish6.webp" alt="Helado de vainilla" class="product-image">
-                <div class="product-info">
-                    <span class="product-name">Helado de vainilla</span>
-                    <span class="product-price">$4.99</span>
-                    <div class="alergenos">
-                        <img src="images/icono_alergeno2.png" alt="Alergeno" class="alergeno-icon">
-                    </div>
-                </div>
-            </li>
-        </ul>
-        <div class="more-products d-none" id="postres">
-            <!-- Productos adicionales de la categoría Postres -->
-            <li class="product-item">
-                <img src="images/dish7.webp" alt="Postre 1" class="product-image">
-                <div class="product-info">
-                    <span class="product-name">Postre 1</span>
-                    <span class="product-price">$9.75</span>
-                    <div class="alergenos">
-                        <img src="images/icono_alergeno4.png" alt="Alergeno" class="alergeno-icon">
-                    </div>
-                </div>
-            </li>
-            <li class="product-item">
-                <img src="images/dish8.webp" alt="Postre 2" class="product-image">
-                <div class="product-info">
-                    <span class="product-name">Postre 2</span>
-                    <span class="product-price">$2.50</span>
-                    <div class="alergenos">
-                        <img src="images/icono_alergeno5.png" alt="Alergeno" class="alergeno-icon">
-                    </div>
-                </div>
-            </li>
-            <li class="product-item">
-                <img src="images/dish7.webp" alt="Postre 3" class="product-image">
-                <div class="product-info">
-                    <span class="product-name">Postre 3</span>
-                    <span class="product-price">$5.99</span>
-                    <div class="alergenos">
-                        <img src="images/icono_alergeno1.png" alt="Alergeno" class="alergeno-icon">
-                        <img src="images/icono_alergeno3.png" alt="Alergeno" class="alergeno-icon">
-                    </div>
-                </div>
-            </li>
-            <li class="product-item">
-                <img src="images/dish8.webp" alt="Postre 4" class="product-image">
-                <div class="product-info">
-                    <span class="product-name">Postre 4</span>
-                    <span class="product-price">$3.99</span>
-                    <div class="alergenos">
-                        <img src="images/icono_alergeno2.png" alt="Alergeno" class="alergeno-icon">
-                    </div>
-                </div>
-            </li>
+            <h1>Próximamente en...</h1><br>
+            <img src="images/logo_menu.png" alt="" style="width: 70%;">
         </div>
 
         <div class="row mt-4">
             <div class="col text-center">
-                <h3 class="bg-light p-3">Menú del Día</h3>
-                <p>Disfruta de nuestro menú especial del día por solo $10.99</p>
-                <a href="menu.pdf" class="btn btn-primary" target="_blank">Ver Menú del Día (PDF)</a>
+                <h3 class="bg-light p-3">Catálogo</h3>
+                <p>¡Consulta nuestro catálogo con gran variedad en todo tipo de productos!</p>
+                <a href="menu.pdf" class="btn btn-primary" target="_blank">Ver Catálogo (PDF)</a>
             </div>
         </div>
     </section>
@@ -224,7 +65,7 @@
     <!-- Pie de Página -->
     <footer class="bg-light text-center text-lg-start mt-5">
         <div class="text-center p-3">
-            © 2024 Tu Restaurante
+            2024 - ELECTROCOLOR©
         </div>
     </footer>
 
