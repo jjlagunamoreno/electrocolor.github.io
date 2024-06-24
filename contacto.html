@@ -58,26 +58,28 @@
         </div>
         <div class="row">
             <div class="col-md-6 offset-md-3">
-                <form>
+                <div id="statusMessage"></div>
+                <form action="send_email.php" method="POST">
                     <div class="form-group">
                         <label for="asunto">Asunto</label>
-                        <input type="text" class="form-control" id="asunto" placeholder="¿Qué necesitas?">
+                        <input type="text" class="form-control" id="asunto" name="asunto" placeholder="¿Qué necesitas?"
+                            required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Tu email">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Tu email"
+                            required>
                     </div>
                     <div class="form-group">
                         <label for="mensaje">Mensaje</label>
-                        <textarea class="form-control" id="mensaje" rows="3" placeholder="Tu mensaje"></textarea>
+                        <textarea class="form-control" id="mensaje" name="mensaje" rows="3" placeholder="Tu mensaje"
+                            required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
             </div>
         </div>
     </section>
-
-
 
     <!-- Pie de Página -->
     <footer class="bg-light text-center text-lg-start mt-5">
@@ -104,6 +106,21 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const status = urlParams.get('status');
+            const statusMessage = document.getElementById('statusMessage');
+
+            if (status === 'success') {
+                statusMessage.innerHTML = '<div class="alert alert-success" role="alert">Mensaje enviado con éxito.</div>';
+                setTimeout(() => { statusMessage.innerHTML = ''; }, 7000);
+            } else if (status === 'error') {
+                statusMessage.innerHTML = '<div class="alert alert-danger" role="alert">Hubo un error al enviar el mensaje.</div>';
+                setTimeout(() => { statusMessage.innerHTML = ''; }, 7000);
+            }
+        });
+    </script>
 </body>
 
 </html>
